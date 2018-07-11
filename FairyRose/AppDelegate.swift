@@ -16,11 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window?.rootViewController = FairyViewController()
         fairylog("hello", "world")
-        var games = SaveGameManager.load()
+        let saveManager = SaveGameManager<GameState>()
+        var games = saveManager.load()
         print(games)
-        games.append(GameState(playerName: "Violet1"))
+        games.append(GameState(playerName: "Violet2"))
+        games = []
         print(games)
-        SaveGameManager.save(games)
+        saveManager.save(games)
         window?.makeKeyAndVisible()
         return true
     }
