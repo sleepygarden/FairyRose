@@ -15,7 +15,7 @@ class FairyButton: SKNode {
     var action: FairyButtonAction
     var isDown = false {
         didSet {
-            updateUIForDownState()
+            updateUIForDownState(isDown)
         }
     }
     let labelNode = SKLabelNode()
@@ -33,6 +33,9 @@ class FairyButton: SKNode {
         self.action = action
         self.size = size
         super.init()
+        spriteNode.size = size
+        labelNode.preferredMaxLayoutWidth = size.width
+        
         addChild(spriteNode)
         addChild(labelNode)
         isUserInteractionEnabled = true
@@ -72,7 +75,7 @@ class FairyButton: SKNode {
         isDown = false
     }
 
-    func updateUIForDownState() {
+    func updateUIForDownState(_ isDown: Bool) {
         if isDown {
             spriteNode.color = .blue
         } else {

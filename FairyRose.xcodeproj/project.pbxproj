@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BE3C1E1120EBC8780022D125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C1E1020EBC8780022D125 /* AppDelegate.swift */; };
-		BE3C1E1720EBC8780022D125 /* FairyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C1E1620EBC8780022D125 /* FairyScene.swift */; };
+		BE3C1E1720EBC8780022D125 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C1E1620EBC8780022D125 /* GameScene.swift */; };
 		BE3C1E1920EBC8780022D125 /* FairyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C1E1820EBC8780022D125 /* FairyViewController.swift */; };
 		BE3C1E1E20EBC87A0022D125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3C1E1D20EBC87A0022D125 /* Assets.xcassets */; };
 		BE3C1E2120EBC87A0022D125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3C1E1F20EBC87A0022D125 /* LaunchScreen.storyboard */; };
 		BE3C1E2A20EBC8CE0022D125 /* FairyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C1E2920EBC8CE0022D125 /* FairyButton.swift */; };
 		BE3E1D3B20F6997600E96A33 /* SaveGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E1D3A20F6997600E96A33 /* SaveGameManager.swift */; };
-		BE3E1D3D20F69ACC00E96A33 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E1D3C20F69ACC00E96A33 /* GameScene.swift */; };
+		BE3E1D3F20F7DE7900E96A33 /* FairyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E1D3E20F7DE7900E96A33 /* FairyScene.swift */; };
 		BE5C563520F52FE6003BFAD6 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C563420F52FE6003BFAD6 /* GameState.swift */; };
 		BE5C563920F66E77003BFAD6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C563820F66E77003BFAD6 /* Utils.swift */; };
 		BEEFEDAF20EFBBAC00684B6C /* FairyTypingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFEDAE20EFBBAC00684B6C /* FairyTypingLabel.swift */; };
@@ -23,14 +23,14 @@
 /* Begin PBXFileReference section */
 		BE3C1E0D20EBC8780022D125 /* FairyRose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FairyRose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3C1E1020EBC8780022D125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE3C1E1620EBC8780022D125 /* FairyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairyScene.swift; sourceTree = "<group>"; };
+		BE3C1E1620EBC8780022D125 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BE3C1E1820EBC8780022D125 /* FairyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairyViewController.swift; sourceTree = "<group>"; };
 		BE3C1E1D20EBC87A0022D125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE3C1E2020EBC87A0022D125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE3C1E2220EBC87A0022D125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE3C1E2920EBC8CE0022D125 /* FairyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairyButton.swift; sourceTree = "<group>"; };
 		BE3E1D3A20F6997600E96A33 /* SaveGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGameManager.swift; sourceTree = "<group>"; };
-		BE3E1D3C20F69ACC00E96A33 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		BE3E1D3E20F7DE7900E96A33 /* FairyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairyScene.swift; sourceTree = "<group>"; };
 		BE5C563420F52FE6003BFAD6 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		BE5C563820F66E77003BFAD6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BEEFEDAE20EFBBAC00684B6C /* FairyTypingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairyTypingLabel.swift; sourceTree = "<group>"; };
@@ -68,8 +68,8 @@
 			children = (
 				BE3C1E2820EBC8C10022D125 /* FairyRose */,
 				BE3C1E1020EBC8780022D125 /* AppDelegate.swift */,
+				BE3C1E1620EBC8780022D125 /* GameScene.swift */,
 				BE5C563420F52FE6003BFAD6 /* GameState.swift */,
-				BE3E1D3C20F69ACC00E96A33 /* GameScene.swift */,
 				BE3C1E1D20EBC87A0022D125 /* Assets.xcassets */,
 				BE3C1E1F20EBC87A0022D125 /* LaunchScreen.storyboard */,
 				BE3C1E2220EBC87A0022D125 /* Info.plist */,
@@ -82,8 +82,8 @@
 			children = (
 				BE3C1E2920EBC8CE0022D125 /* FairyButton.swift */,
 				BEEFEDAE20EFBBAC00684B6C /* FairyTypingLabel.swift */,
-				BE3C1E1620EBC8780022D125 /* FairyScene.swift */,
 				BE3C1E1820EBC8780022D125 /* FairyViewController.swift */,
+				BE3E1D3E20F7DE7900E96A33 /* FairyScene.swift */,
 				BE3E1D3A20F6997600E96A33 /* SaveGameManager.swift */,
 				BE5C563820F66E77003BFAD6 /* Utils.swift */,
 			);
@@ -161,11 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEFEDAF20EFBBAC00684B6C /* FairyTypingLabel.swift in Sources */,
-				BE3C1E1720EBC8780022D125 /* FairyScene.swift in Sources */,
+				BE3C1E1720EBC8780022D125 /* GameScene.swift in Sources */,
 				BE3C1E2A20EBC8CE0022D125 /* FairyButton.swift in Sources */,
-				BE3E1D3D20F69ACC00E96A33 /* GameScene.swift in Sources */,
 				BE5C563920F66E77003BFAD6 /* Utils.swift in Sources */,
 				BE3E1D3B20F6997600E96A33 /* SaveGameManager.swift in Sources */,
+				BE3E1D3F20F7DE7900E96A33 /* FairyScene.swift in Sources */,
 				BE5C563520F52FE6003BFAD6 /* GameState.swift in Sources */,
 				BE3C1E1920EBC8780022D125 /* FairyViewController.swift in Sources */,
 				BE3C1E1120EBC8780022D125 /* AppDelegate.swift in Sources */,

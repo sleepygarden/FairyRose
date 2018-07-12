@@ -14,17 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        window?.rootViewController = FairyViewController()
-        fairylog("hello", "world")
+        let fairyViewController = FairyViewController()
+        let rootScene = GameScene(fairyViewController: fairyViewController)
+        fairyViewController.presentSceneWhenReady(rootScene)
+
         let saveManager = SaveGameManager<GameState>()
         var games = saveManager.load()
-        print(games)
         games.append(GameState(playerName: "Violet2"))
-        games = []
-        print(games)
         saveManager.save(games)
+
+        window?.rootViewController = fairyViewController
         window?.makeKeyAndVisible()
         return true
     }
+
+
 }
 
